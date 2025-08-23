@@ -1,0 +1,128 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  background: #222;
+  color: #fff;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  margin: 0;
+}
+
+.nav a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  background: #f4f4f4;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+/* Sections */
+section {
+  padding: 2rem 0;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  background: #eaeaea;
+  margin-bottom: .5rem;
+  padding: .5rem 1rem;
+  border-radius: 4px;
+}
+
+/* Contact form */
+form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: .5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: .5rem 1rem;
+  border: none;
+  background: #222;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.form-status {
+  margin-top: 1rem;
+  color: green;
+}
+
+/* Footer */
+.site-footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav a {
+    margin: .5rem 0;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+}
