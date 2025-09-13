@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oxbow</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo">Oxbow</h1>
-      <nav class="nav" id="nav">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button class="nav-toggle" id="nav-toggle" aria-label="toggle navigation">☰</button>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oxbow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">Oxbow</h1>
+        <nav class="nav" id="nav">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" aria-label="toggle dark mode">🌙</button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="toggle navigation">☰</button>
+      </div>
+    </header>
 
   <section class="hero">
     <div class="container">
       <h2>Your Path to Riverfront Innovation</h2>
       <p>Oxbow provides cutting-edge solutions that bend with the flow of your business.</p>
+      <button class="cta-btn" data-scroll="#services">Explore Services</button>
     </div>
   </section>
 
@@ -37,11 +42,37 @@
   <section id="services" class="services">
     <div class="container">
       <h2>Services</h2>
-      <ul>
-        <li>Custom Software Development</li>
-        <li>UX/UI Design</li>
-        <li>Cloud Integration</li>
+      <ul class="service-list">
+        <li class="service-item">
+          <button class="service-title" aria-expanded="false">Custom Software Development</button>
+          <div class="service-content">
+            <p>Tailored applications built to streamline your business processes.</p>
+          </div>
+        </li>
+        <li class="service-item">
+          <button class="service-title" aria-expanded="false">UX/UI Design</button>
+          <div class="service-content">
+            <p>Intuitive interfaces that keep users engaged and delighted.</p>
+          </div>
+        </li>
+        <li class="service-item">
+          <button class="service-title" aria-expanded="false">Cloud Integration</button>
+          <div class="service-content">
+            <p>Seamless migration and connectivity across cloud platforms.</p>
+          </div>
+        </li>
       </ul>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="testimonial" id="testimonial"></div>
+      <div class="testimonial-controls">
+        <button id="testimonial-prev" aria-label="previous testimonial">‹</button>
+        <button id="testimonial-next" aria-label="next testimonial">›</button>
+      </div>
     </div>
   </section>
 
@@ -72,6 +103,8 @@
       <p>&copy; <span id="year"></span> Oxbow. All rights reserved.</p>
     </div>
   </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="back to top">↑</button>
 
   <script src="script.js"></script>
 </body>
