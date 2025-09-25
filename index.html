@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Harbinger 90s Interface</title>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="console" class="pane">
+    <div id="output"></div>
+    <input id="command" type="text" autocomplete="off" />
+  </div>
+  <div id="widgets" class="pane">
+    <canvas id="globe"></canvas>
+    <canvas id="chart"></canvas>
+  </div>
+  <div id="status">Status: <span id="statusText">BOOTING</span></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.155/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
